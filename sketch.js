@@ -27,16 +27,21 @@ if (car.x - wall.x < wall.width/2 + car.width/2
 car .velocityX = 0;
 var deformation  = 0.5 * speed * speed/22509;
 
-if (deformation > 180 && deformation>100){
 
-car . shapeColor = color ("red");
+if (deformation > 180){
+  car.shapeColor = color (255, 0, 0)
 }
 
+
+if (deformation > 180 && deformation>100){
+
+car . shapeColor = color (230, 230, 0);
+}
 
 if (deformation < 100)
 {
 
-  car. shapeColor = color ("red")
+  car. shapeColor = color (0, 255, 0)
 }
 
 
